@@ -111,7 +111,7 @@ for idx, row in data_line.iterrows():
     count += 1
     plt.plot(["1", "2", "3"],row.values, label="{} #{}".format(selected_species, idx-initial_idx))
 plt.legend(bbox_to_anchor=(1,1))
-plt.title("Length of all {} over period of 3 weeks".format(selected_species))
+plt.title("Length of first 5 {} over period of 3 weeks".format(selected_species))
 plt.xlabel("Week")
 plt.ylabel("Length in inches")
 st.pyplot(fig)
